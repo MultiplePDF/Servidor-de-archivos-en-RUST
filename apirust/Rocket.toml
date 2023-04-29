@@ -1,0 +1,18 @@
+
+[global]
+address = "0.0.0.0"
+port = 4000
+
+[development]
+address = "localhost"
+port = 4000
+
+[production]
+address = "0.0.0.0"
+port = 4000
+
+[global.limits]
+json = 2000000000
+string=2000000000
+forms= 2000000000
+

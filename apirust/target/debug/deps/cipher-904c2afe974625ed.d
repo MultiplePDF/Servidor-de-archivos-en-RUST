@@ -1,0 +1,11 @@
+D:\Users\USUARIO\Desktop\Nueva carpeta\Servidor-de-archivos-en-RUST\apirust\target\debug\deps\cipher-904c2afe974625ed.rmeta: C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\lib.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\block.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\common.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\errors.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\stream.rs
+
+D:\Users\USUARIO\Desktop\Nueva carpeta\Servidor-de-archivos-en-RUST\apirust\target\debug\deps\libcipher-904c2afe974625ed.rlib: C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\lib.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\block.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\common.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\errors.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\stream.rs
+
+D:\Users\USUARIO\Desktop\Nueva carpeta\Servidor-de-archivos-en-RUST\apirust\target\debug\deps\cipher-904c2afe974625ed.d: C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\lib.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\block.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\common.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\errors.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\stream.rs
+
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\lib.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\block.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\common.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\errors.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\stream.rs:

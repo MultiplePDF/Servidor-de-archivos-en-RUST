@@ -1,0 +1,10 @@
+D:\Users\USUARIO\Desktop\Nueva carpeta\Servidor-de-archivos-en-RUST\apirust\target\debug\deps\uncased-3c972c41dc214f0f.rmeta: C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\uncased-0.9.7\src\lib.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\uncased-0.9.7\src\owned.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\uncased-0.9.7\src\borrowed.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\uncased-0.9.7\src\as_uncased.rs
+
+D:\Users\USUARIO\Desktop\Nueva carpeta\Servidor-de-archivos-en-RUST\apirust\target\debug\deps\libuncased-3c972c41dc214f0f.rlib: C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\uncased-0.9.7\src\lib.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\uncased-0.9.7\src\owned.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\uncased-0.9.7\src\borrowed.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\uncased-0.9.7\src\as_uncased.rs
+
+D:\Users\USUARIO\Desktop\Nueva carpeta\Servidor-de-archivos-en-RUST\apirust\target\debug\deps\uncased-3c972c41dc214f0f.d: C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\uncased-0.9.7\src\lib.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\uncased-0.9.7\src\owned.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\uncased-0.9.7\src\borrowed.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\uncased-0.9.7\src\as_uncased.rs
+
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\uncased-0.9.7\src\lib.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\uncased-0.9.7\src\owned.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\uncased-0.9.7\src\borrowed.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\uncased-0.9.7\src\as_uncased.rs:
