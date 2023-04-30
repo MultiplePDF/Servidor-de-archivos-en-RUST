@@ -48,7 +48,7 @@ fn rocket() -> _ {
 
 #[get("/download/<user>/<batch>/<filename>")]
 async fn download_file(user: &str, batch: &str, filename: &str) -> Option<NamedFile> {
-    let file_path = format!("/home/bd-admin/servidor/{}/{}/{}", user, batch, filename);
+    let file_path = format!("/opt/services/servidor/{}/{}/{}", user, batch, filename);
     NamedFile::open(file_path).await.ok()
 }
 
@@ -56,8 +56,8 @@ async fn download_file(user: &str, batch: &str, filename: &str) -> Option<NamedF
 
 #[get("/download_batch/<user>/<batch>")]
 async fn download_batch(user: &str, batch: &str) -> io::Result<NamedFile> {
-    let dir_path = format!("/home/bd-admin/servidor/{}/{}", user, batch);
-    let zip_file_path = format!("/home/bd-admin/servidor/{}/{}.zip", user, batch);
+    let dir_path = format!("/opt/services/servidor/{}/{}", user, batch);
+    let zip_file_path = format!("/opt/services/servidor/{}/{}.zip", user, batch);
 
     // create a zip file to write the batch files
     let zip_file = File::create(&zip_file_path)?;
@@ -92,7 +92,7 @@ fn decode_base64(message:String) -> Result<String, String> {
 
     let mut object: Message = serde_json::from_str(&message).unwrap();
 
-    let dir_user = format!("/home/bd-admin/servidor/{}", object.userID);
+    let dir_user = format!("/opt/services/servidor/{}", object.userID);
 
     if !Path::new(&dir_user).exists() {
         match fs::create_dir(&dir_user) {
