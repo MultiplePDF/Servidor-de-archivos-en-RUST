@@ -1,0 +1,13 @@
+d:\Users\USUARIO\Desktop\Nueva carpeta\Servidor-de-archivos-en-RUST\apirust\target\debug\deps\toml-0f0dbf66a361a2ee.rmeta: C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\lib.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\map.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\value.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\datetime.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\ser.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\de.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\tokens.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\macros.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\spanned.rs
+
+d:\Users\USUARIO\Desktop\Nueva carpeta\Servidor-de-archivos-en-RUST\apirust\target\debug\deps\toml-0f0dbf66a361a2ee.d: C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\lib.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\map.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\value.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\datetime.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\ser.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\de.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\tokens.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\macros.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\spanned.rs
+
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\lib.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\map.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\value.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\datetime.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\ser.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\de.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\tokens.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\macros.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\toml-0.5.11\src\spanned.rs:
