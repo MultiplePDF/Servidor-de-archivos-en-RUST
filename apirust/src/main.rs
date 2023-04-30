@@ -92,7 +92,7 @@ fn decode_base64(message:String) -> Result<String, String> {
 
     let mut object: Message = serde_json::from_str(&message).unwrap();
 
-    let dir_user = format!("/opt/services/servidor/p{}", object.userID);
+    let dir_user = format!("/opt/services/servidor/{}", object.userID);
 
     if !Path::new(&dir_user).exists() {
         match fs::create_dir(&dir_user) {
