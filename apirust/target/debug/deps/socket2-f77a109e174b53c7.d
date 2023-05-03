@@ -1,0 +1,11 @@
+D:\Users\USUARIO\Desktop\Nueva carpeta\Servidor-de-archivos-en-RUST\apirust\target\debug\deps\socket2-f77a109e174b53c7.rmeta: C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\lib.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\sockaddr.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\socket.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\sockref.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\sys\windows.rs
+
+D:\Users\USUARIO\Desktop\Nueva carpeta\Servidor-de-archivos-en-RUST\apirust\target\debug\deps\libsocket2-f77a109e174b53c7.rlib: C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\lib.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\sockaddr.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\socket.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\sockref.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\sys\windows.rs
+
+D:\Users\USUARIO\Desktop\Nueva carpeta\Servidor-de-archivos-en-RUST\apirust\target\debug\deps\socket2-f77a109e174b53c7.d: C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\lib.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\sockaddr.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\socket.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\sockref.rs C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\sys\windows.rs
+
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\lib.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\sockaddr.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\socket.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\sockref.rs:
+C:\Users\USUARIO\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.9\src\sys\windows.rs:

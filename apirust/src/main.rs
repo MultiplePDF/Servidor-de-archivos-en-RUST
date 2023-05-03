@@ -1,21 +1,23 @@
 #[macro_use] extern crate rocket;
 
 use base64::decode;
-use json::{Array, JsonValue};
 use std::fs::File;
-use rocket::{serde::{json::{Json, serde_json}, DeserializeOwned}, Data};
+use rocket::{serde::{json::{ serde_json}}};
 use std::io::Write;
 use serde_json::{Value};
 use std::fs;
 use rocket::fs::NamedFile;
-use std::path::{Path, PathBuf};
-use std::io::BufWriter;
+use std::path::{Path};
 use zip::write::FileOptions;
-use zip::result::ZipResult;
-use zip::ZipWriter;
 use std::io;
 use std::io::{ BufReader, Read};
-
+use chrono::{Duration, Local, NaiveDate};
+use serde_json::json;
+//use rocket::local::blocking::Client;
+use reqwest;
+use serde::Serialize;
+use reqwest::Client;
+//cambiado
 #[derive(serde:: Deserialize, Debug)]
 struct Message {
    subBatchID: String ,
@@ -29,10 +31,20 @@ struct InnerJSON {
     checksum: String,
     fileID: i64,
     fileName: String,
-    size: u32,
+    size: i64,
     subBatchID: String,
     url: String,
 }
+#[derive(serde:: Deserialize, Debug,Serialize)]
+struct BatchFile {
+   fileName: String,
+    size: f64,
+    filePath: String,
+}
+
+
+
+
 
 #[get("/")]
 fn index() -> String {
@@ -83,12 +95,20 @@ async fn download_batch(user: &str, batch: &str) -> io::Result<NamedFile> {
     // Return the NamedFile for the zip file
     Ok(NamedFile::open(zip_file_path).await?)
 }
+fn calculate_validity() -> NaiveDate {
+    let now = Local::now()	.naive_local().date();
+    let thirty_days = Duration::days(30);
+    now + thirty_days
+}
 
 
 
 #[post("/decode", format = "json", data = "<message>")]
-fn decode_base64(message:String) -> Result<String, String> {
-    //println!("{}",&message);
+async fn decode_base64(message:String) -> Result<String, String> {
+    println!("{}",&message);
+    let validity = calculate_validity();
+    let validity_str = validity.format("%Y-%m-%d").to_string();
+    let validity_date = NaiveDate::parse_from_str(&validity_str, "%Y-%m-%d").unwrap();
 
     let mut object: Message = serde_json::from_str(&message).unwrap();
 
@@ -110,7 +130,8 @@ fn decode_base64(message:String) -> Result<String, String> {
         };
     }
 
-    for x in object.files {
+   let mut batch_files = vec![];
+   for x in &object.files {
         let object_value: Value = serde_json::from_str(&x.to_string()).unwrap();
         let my_json: InnerJSON = serde_json::from_value(object_value).unwrap();
 
@@ -118,14 +139,45 @@ fn decode_base64(message:String) -> Result<String, String> {
             Ok(bytes) => bytes,
            Err(err) => return Err(format!("Error al decodificar: {}", err)),
         };
-        let path = format!("{}/{}", dir_name, my_json.fileName);
-        let mut file = match File::create(path) {
+        
+       let path = format!("{}/{}", dir_name, my_json.fileName);
+       let path2 = format!("{}/{}", dir_name, my_json.fileName);       
+ let mut file = match File::create(path) {
             Ok(file) => file,
             Err(err) => return Err(format!("Error al crear el archivo: {}", err)),
         };
         file.write_all(&decoded_bytes);
 
+	let mut downloadUrl = format!("http://bd.bucaramanga.upb.edu.co:4000/download/{}/{}/{}", object.userID, object.subBatchID, my_json.fileName);
+      let archive = BatchFile {
+        fileName: my_json.fileName,
+        size: decoded_bytes.len() as f64,
+        filePath: downloadUrl,
+    };
+    batch_files.push(archive);
+
+
+
     }
-   Ok("Exito".to_string())
+	let downloadBatchUrl = format!("http://bd.bucaramanga.upb.edu.co:4000/download_batch/{}/{}", object.userID, object.subBatchID);
+      let create_batch_data = json!({
+        "userId": object.userID,
+        "numberFiles": object.files.len(),
+        "batchPath": downloadBatchUrl,
+        "files": batch_files,
+        "validity": validity_date,
+    });
+ 
+  let response = reqwest::Client::new()
+    .post("http://bd.bucaramanga.upb.edu.co:3000/batch/createBatch")
+    .json(&create_batch_data)
+    .send()
+    .await
+    .expect("failed");
+  
+
+    println!("{}", response.status());
+
+    Ok("Exito".to_string())
 }
 
